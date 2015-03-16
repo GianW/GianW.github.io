@@ -1,10 +1,10 @@
 var jsonObj = { 'lista':
-					[ 'Progress','JavaScript', 'CSS3', 'NodeJS'],
+					[ 'Progress','JavaScript', 'HTML5', 'NodeJS'],
 				'skills':
 				 {
 					'Progress':'95',
 					'JavaScript':'85',
-					'CSS3':'75',   						
+					'HTML5':'90',   						
 					'NodeJS': '65'					
 				}
 			  };
@@ -26,7 +26,7 @@ function selecionaMenu(menu){
 function mostraAba(aba){
 	escondeAbas();
 
-	if (aba == "Habs") {
+	if (aba == "Skills") {
 		document.getElementById("habs").style.display = "block";
 
     	var tamLista = jsonObj.lista.length;
