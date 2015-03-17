@@ -67,11 +67,11 @@ function mostraAba(aba){
 	if (aba == "menu_sobre") {
 		document.getElementById("sobre").style.display = "block";
 	}
-	if (aba == "Contato") {
-		document.getElementById("menu_contato").style.display = "block";
+	if (aba == "menu_contato") {
+		document.getElementById("contato").style.display = "block";
 	};
-	if (aba == "Projetos") {
-		document.getElementById("menu_projetos").style.display = "block";
+	if (aba == "menu_projetos") {
+		document.getElementById("projetos").style.display = "block";
 	};
 }
 
