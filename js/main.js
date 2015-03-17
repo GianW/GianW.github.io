@@ -1,11 +1,14 @@
 var jsonObj = { 'lista':
-					[ 'Progress','JavaScript', 'HTML5', 'NodeJS'],
+					[ 'Progress','JavaScript', 'HTML5', 'NodeJS','PHP'],
 				'skills':
 				 {
 					'Progress':'95',
 					'JavaScript':'85',
 					'HTML5':'90',   						
-					'NodeJS': '65'					
+					'NodeJS': '65',
+					'PHP': '80',
+					'MySQL':'85',
+					'MongoDB': '75'					
 				}
 			  };
 
