@@ -24,13 +24,13 @@ function selecionaMenu(menu){
 
 	menu.className = "active";
 
-	mostraAba(menu.innerHTML);
+	mostraAba(menu.id);
 }
 
 function mostraAba(aba){
 	escondeAbas();
 
-	if (aba == "Skills") {
+	if (aba == "menu_skills") {
 		document.getElementById("habs").style.display = "block";
 
     	var tamLista = jsonObj.lista.length;
@@ -64,14 +64,14 @@ function mostraAba(aba){
    		};
 
 	};
-	if (aba == "Sobre") {
+	if (aba == "menu_sobre") {
 		document.getElementById("sobre").style.display = "block";
 	}
 	if (aba == "Contato") {
-		document.getElementById("contato").style.display = "block";
+		document.getElementById("menu_contato").style.display = "block";
 	};
 	if (aba == "Projetos") {
-		document.getElementById("projetos").style.display = "block";
+		document.getElementById("menu_projetos").style.display = "block";
 	};
 }
 
