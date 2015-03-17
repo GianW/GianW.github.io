@@ -1,14 +1,15 @@
 var jsonObj = { 'lista':
-					[ 'Progress','JavaScript', 'HTML5', 'NodeJS','PHP'],
+					[ 'Progress 4GL','JavaScript', 'HTML5', 'NodeJS','PHP','MySQL','MongoDB','ExtJs'],
 				'skills':
 				 {
-					'Progress':'95',
+					'Progress 4GL':'95',
 					'JavaScript':'85',
 					'HTML5':'90',   						
 					'NodeJS': '65',
 					'PHP': '80',
 					'MySQL':'85',
-					'MongoDB': '75'					
+					'MongoDB': '75',
+					'ExtJs': '70'				
 				}
 			  };
 
@@ -42,9 +43,10 @@ function mostraAba(aba){
     		if (cont_aux == 3) {
     			conteudo += "</div><div class=linhaSkill>";
     			cont_aux = 0
-    		};
+    		}else{
+    			cont_aux++;
+    		}
 
-    		cont_aux++;
     	};
 
     	document.getElementById("habs").innerHTML = conteudo + "</div>";
@@ -68,11 +70,15 @@ function mostraAba(aba){
 	if (aba == "Contato") {
 		document.getElementById("contato").style.display = "block";
 	};
+	if (aba == "Projetos") {
+		document.getElementById("projetos").style.display = "block";
+	};
 }
 
 function escondeAbas(){
 	document.getElementById("sobre").style.display 		= "none";
 	document.getElementById("habs").style.display 		= "none";
 	document.getElementById("contato").style.display 	= "none";
+	document.getElementById("projetos").style.display 	= "none";
 }
 
