@@ -87,7 +87,8 @@ body {
         height: 140px;    
         width: 100%;
     }
-     .coluna_0, .coluna_1, .coluna_2, .coluna_3{
+     .coluna_0, .coluna_1, .coluna_2, .coluna_3,
+     .coluna_4, .coluna_5,.coluna_6, .coluna_7{
         width: 25%;
     }
 
@@ -129,4 +130,30 @@ body {
     margin: 0 auto;
 }
 
+/*Icones sociais*/
+i{
+    color: #000;
+}
 
+.fa-linkedin-square:hover, .fa-facebook-official:hover{
+    color: #3b5998;
+}
+
+.fa-github:hover, .fa-twitter:hover{
+    color: #afbdd4;
+}
+
+
+.waiting{
+    margin-left:35%;
+    margin-top: 20%;
+}
+
+a:link {text-decoration: none;color: #000}
+a:active {text-decoration: none;}
+a:visited {text-decoration: none;color: #000}
+a:hover {text-decoration: underline;color: #000}
+
+.init_ico{
+    display: none;
+}
