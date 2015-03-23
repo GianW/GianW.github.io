@@ -99,6 +99,7 @@ function mostraAba(aba){
 	};
 	if (aba == "menu_projetos") {
 		document.getElementById("projetos").style.display = "block";
+		requisitar('projetos.html','projetos');
 	};
 	if (aba == "menu_posts") {
 		document.getElementById("posts").style.display = "block";

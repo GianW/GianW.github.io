@@ -42,10 +42,11 @@
 			
 			function keyDown(e) 
 			{
+
 				if(e.keyCode == 37)
-				{
+				{					
 					if(jogadorPosicaoX > 0)
-					{
+					{						
 						jogadorPosicaoX -= velocidadeJogador;
 					}
 				}
@@ -65,7 +66,6 @@
 			function gameLoop()
 			{
 				
-				velocidadeJogador = 0;
 				//Limpa Tela
 				context.clearRect(0, 0, canvas.width, canvas.height);
 				
@@ -113,12 +113,14 @@
 				// Jogador
 				context.fillRect(jogadorPosicaoX, canvas.height - barraAltura, barraLargura, barraAltura);
 
-				// if (tempo >= 60) {
-				// 	tempo = 0;
-				// 	qtdJogo++;
-				// 	document.getElementById("game_placar").innerHTML += "<p>Jogo" + qtdJogo + " :" + pontosJogador + "</p>";
-				// 	bola();
-				// 	// inicializar();
-				// };
+				if (tempo >= 60) {
+					b.velocidadeBola = 0;
+					tempo = 0;
+					pontosJogador = 0;
+					qtdJogo++;
+					document.getElementById("game_placar").innerHTML += "<p>Jogo" + qtdJogo + " :" + pontosJogador + "</p>";
+					bola();
+					// inicializar();
+				};
 			}
 			
