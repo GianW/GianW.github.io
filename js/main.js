@@ -66,6 +66,7 @@ function mostraAba(aba){
 	};
 	if (aba == "menu_sobre") {
 		document.getElementById("sobre").style.display = "block";
+		requisitar('sobre.html','sobre');
 	}
 	if (aba == "menu_contato") {
 		document.getElementById("contato").style.display = "block";
