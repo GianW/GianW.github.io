@@ -114,7 +114,7 @@
 				context.fillRect(jogadorPosicaoX, canvas.height - barraAltura, barraLargura, barraAltura);
 
 				if (tempo >= 60) {
-					b.velocidadeBola = 0;
+					
 					tempo = 0;
 					pontosJogador = 0;
 					qtdJogo++;
