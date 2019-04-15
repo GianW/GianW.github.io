@@ -3,18 +3,18 @@ import { graphql } from "gatsby"
 import './main.css';
 
 import Layout from "../components/layout"
+import PostsLayout from "../components/postsLayout"
+
 
 class PageIndex extends React.Component {
     render() {
         const { data } = this.props
-        const siteTitle = data.site.siteMetadata.title
+        // const siteTitle = data.site.siteMetadata.title
         const posts = data.allMarkdownRemark.edges
 
-        console.log(data);
         return (
             <Layout>
-
-
+                <PostsLayout posts={posts} />
             </Layout>
         )
      }
@@ -32,11 +32,15 @@ export const pageQuery = graphql`
         }
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter:  { fileAbsolutePath: { glob: "**/brain/**/*.md" } }
+            filter:  { fileAbsolutePath: { glob: "**/blog/**/*.md" } }
             ) {
             edges{
                 node{
                     excerpt
+                     frontmatter {
+                        title
+                        description
+                    }
                 }
             }
         }

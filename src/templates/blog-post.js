@@ -9,7 +9,7 @@ import { graphql } from "gatsby"
 class BlogPostTemplate extends React.Component {
 
   render() {
-    const post = this.props.data.markdownRemark
+    // const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     // const { previous, next } = this.props.pageContext
 

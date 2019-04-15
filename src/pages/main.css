@@ -19,7 +19,7 @@ header{
     text-align: center;
 }
 
-/*MENU*/
+/*===MENU===*/
 #menuToggle > a
 {
   text-decoration: none;
@@ -136,6 +136,34 @@ header{
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+/*===FIM MENU===*/
+/*=== CARD LAYOUT ===*/
+.cardGrid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+}
+.postCard{
+    flex: 0 0 200px;
+    margin: 10px;
+    background-color: #2e2d2d;
+    color: white;
+    width: 28%;
+    min-width: 28%;
+    padding: 1rem;
+    border-radius: 6px;
+    color: #b9b9b9;
+}
+.postCard > h3{
+    color: #B6C3CC;
+    align-content: center;
+}
+.postCard > p{
+    color: #b9b9b9;
 }
 
 
