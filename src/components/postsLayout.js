@@ -11,7 +11,6 @@ class PostsLayout extends React.Component {
                     const title = node.frontmatter.title || node.fields.slug;
                     const desc = node.frontmatter.description || "";
 
-
                     return(
                         <div key={title} className="postCard">
                             <h3>{title}</h3>

@@ -7,7 +7,7 @@ const Layout = ({ children }) => (
         <Helmet>
             <title>Gian Winckler</title>
         </Helmet>
-        <Header siteTitle="teste" />
+        <Header/>
         <main>{children}</main>
     </div>
 )

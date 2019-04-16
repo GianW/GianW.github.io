@@ -7,6 +7,21 @@ module.exports = {
         social: {
             twitter: `gianwinckler`,
         },
+        menuLinks:[
+            {
+                name: 'Home',
+                link: '/'
+            },
+            {
+                name: 'Brain',
+                link: '/brain'
+            },
+            {
+                name: 'About',
+                link: '/about'
+            },
+
+        ]
     },
     plugins: [
         // `gatsby-plugin-feed`,
