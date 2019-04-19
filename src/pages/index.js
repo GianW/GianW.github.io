@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import './main.css';
 
 import Layout from "../components/layout"
-import PostsLayout from "../components/postsLayout"
+import PostsGrid from "../components/postsGrid"
 
 
 class PageIndex extends React.Component {
@@ -14,7 +14,7 @@ class PageIndex extends React.Component {
 
         return (
             <Layout>
-                <PostsLayout posts={posts} />
+                <PostsGrid posts={posts} />
             </Layout>
         )
      }
@@ -37,9 +37,13 @@ export const pageQuery = graphql`
             edges{
                 node{
                     excerpt
+                    fields {
+                        slug
+                    }
                      frontmatter {
                         title
                         description
+                        date(formatString: "MMMM DD, YYYY")
                     }
                 }
             }

@@ -1,15 +1,22 @@
+---
+title: Javascript
+type: brain
+image:
+tags: []
+---
+
 # Organizando o Javascript
 Resumo de estudos.
 
 ## Table of Contents
 +  [Escopo de variaveis](#escopo-de-variaveis)
     + [Clousures](#clousures)
-    + [Let](#let---es06) 
+    + [Let](#let---es06)
     + [Const](#const---es06)
     + [Destructuring](#destructuring)
-    + [Object Literal](#object-literal) 
-    + [Spread ...](#spread-) 
-    + [Rest ...](#rest-) 
+    + [Object Literal](#object-literal)
+    + [Spread ...](#spread-)
+    + [Rest ...](#rest-)
 + [Funções](#funções)
     + [Function expression](#function-expression)
     + [Funções anonimas](#funções-anonimas)
@@ -18,7 +25,7 @@ Resumo de estudos.
     + [Callback](#callback)
     + [Bind](#bind)
     + [Call](#call)
-    + [Apply](#apply)    
+    + [Apply](#apply)
     + [Promises](#promises)
 + [Arrays](#arrays)
     + [Operações](#operações)
@@ -149,7 +156,7 @@ let pessoa = {nome: "Gian", idade: 27, email: "gianbwinckler"}
 let {nome, email} = pessoa;
 console.log(nome, email);
 ```
-Repare que chave ou conchete é o que identifica o tipo de objeto a ser desestruturado. 
+Repare que chave ou conchete é o que identifica o tipo de objeto a ser desestruturado.
 
 ### Object Literal
 Criar objetos atribuindo variaveis, nome da variaveel vira atributo e permance com o valor:
@@ -262,8 +269,8 @@ function alertaErro(tipoErro){
 		alert("Erro: " + tipoErro + " Quantidade: " + qtdErro);
 	}
 }
-let errValorInvalido = alertaErro("Valor inválido!"); 
-let errPreenchaNome = alertaErro("Você deve preencher o campo nome."); 
+let errValorInvalido = alertaErro("Valor inválido!");
+let errPreenchaNome = alertaErro("Você deve preencher o campo nome.");
 
 errValorInvalido(); // qtd 1
 errValorInvalido(); // qtd 2
@@ -281,7 +288,7 @@ function alertaErro(tipoErro){
 		alert("Erro: " + tipoErro + ", Campo: " + campo + " Quantidade: " + qtdErro);
 	}
 }
-let errValorInvalido = alertaErro("Valor inválido!"); 
+let errValorInvalido = alertaErro("Valor inválido!");
 
 errValorInvalido("Total"); // qtd 1
 errValorInvalido("Frete"); // qtd 2
@@ -355,8 +362,8 @@ Existem diversos usos para este tipo de função, exemplo:
 var produtos = (function(){
   var lista = [];
   return{
-   add: function(a){ 
-     lista.push(a) 
+   add: function(a){
+     lista.push(a)
    },
    show: function(){
      console.log(lista);
@@ -364,9 +371,9 @@ var produtos = (function(){
   }
 }());
 
-produtos.add("camisa"); 
+produtos.add("camisa");
 produtos.add("calça");
-produtos.show();  
+produtos.show();
 ```
 
 Dessa forma a lista fica acessivel apenas dentro de produtos, "encapisulados" pelo escopo são acessiveis apenas pelos metodos expostos. Obs. Isso também é conhecido como module pattern
@@ -409,12 +416,13 @@ e também no navegador
 <hr>
 
 ### Promises
+<a name="promises"></a>
 <hr>
 
 ## 's
 
 ### Operações
-```javascript   
+```javascript
 var produtos = ['camisa', 'calça'];
 
 console.log(produtos.length); //2
@@ -439,7 +447,7 @@ produtos.shift(); //"camisa"
 //Incluir item no inicio da lista (retorna tamanho da lista)
 produtos.unshift("camisa"); //2
 
-// Procura a posição de um item dentro do array 
+// Procura a posição de um item dentro do array
 produtos.indexOf("calça"); // 1
 
 // Remove itens por posição ==revisar==

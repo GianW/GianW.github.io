@@ -163,15 +163,25 @@ header{
 .postCard:hover{
     box-shadow: 2px 2px 10px black;
 }
-.postCard > h3{
+.cardPostTitle{
     color: #B6C3CC;
     align-content: center;
 }
-.postCard > p{
+.cardPostDesc, .cardPostDate{
     color: #b9b9b9;
 }
-.postCard > h3, p:hover{
+.cardPostTitle, .cardPostDesc:hover{
     cursor: pointer;
+}
+
+/*POST*/
+.mainPost, .mainPost *{
+    color: #b9b9b9;
+    letter-spacing: .030rem;
+}
+
+.mainPost * a{
+  color: #dcdcdc;
 }
 
 

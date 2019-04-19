@@ -1,14 +1,15 @@
 import React from "react"
-import { graphql } from "gatsby"
 import './main.css';
 
-
+import Layout from "../components/layout"
 
 class About extends React.Component {
     render() {
 
         return (
-            <h2>ABOUT</h2>
+            <Layout>
+                <h2>ABOUT</h2>
+            </Layout>
 
         )
      }

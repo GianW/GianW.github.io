@@ -11,3 +11,12 @@ egg yolk will be less rich."?
 ([Wikipedia Link](http://en.wikipedia.org/wiki/Salted_duck_egg))
 
 Yeah, I didn't either.
+
+Escopo de função
+```javascript
+function imprime(){
+    var nome = "Gian";
+    console.log(nome); /*Gian*/
+}
+console.log(nome); /*undefined*/
+```
