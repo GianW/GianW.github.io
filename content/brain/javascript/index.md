@@ -1,7 +1,6 @@
 ---
-title: Javascript
+title: javascript
 type: brain
-image:
 tags: []
 ---
 

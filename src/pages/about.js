@@ -8,7 +8,19 @@ class About extends React.Component {
 
         return (
             <Layout>
-                <h2>ABOUT</h2>
+                <div className="mainPost" style={{margin: `0 auto`,maxWidth: `48rem`,padding: `1.0rem 1.0875rem`}}>
+                    <p>Nice to see you here :)</p>
+                    <p>I made this page to store my studies, snippets and explanation about projects i done, to keep in a place where i can consult anytime and anywhere.</p>
+                    <p>Im would be happy if it's content could be usefull to someone too.</p>
+                    <p>Feel free to contact me at <b style={{color:`white`}}>gianbwinckler@gmail.com</b></p><br/>
+                    <hr/>
+                    <p><a href="https://github.com/GianW" target="_blank">Github</a></p>
+                    <p><a href="https://www.linkedin.com/in/giancarlo-winckler-46b6ba82" target="_blank">Linkedin</a></p>
+                    <p><a href="https://twitter.com/GianWinckler" target="_blank">Twitter</a></p>
+
+                </div>
+
+
             </Layout>
 
         )

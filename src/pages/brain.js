@@ -10,10 +10,11 @@ class Brain extends React.Component {
 
         const { data } = this.props
         const brains = data.allMarkdownRemark.edges
+        const imgs = data.allFile.edges
 
         return (
             <Layout>
-                <BrainsGrid brains={brains} />
+                <BrainsGrid brains={brains} imgs={imgs} />
             </Layout>
 
         )
@@ -30,6 +31,15 @@ export const pageQuery = graphql`
             siteMetadata {
                 title
             }
+        }
+        allFile(filter: {extension: {eq: "png"}}) {
+          edges {
+            node {
+              id,
+              publicURL
+              name
+            }
+          }
         }
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }

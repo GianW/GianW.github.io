@@ -183,5 +183,35 @@ header{
 .mainPost * a{
   color: #dcdcdc;
 }
+/*BRAIN*/
+.cardBrainTitle{
+    color: #B6C3CC;
+    align-content: center;
+    text-align: center;
+}
+.cardBrainImg{
+    text-align: center;
+}
+.cardBrainImg > img{
+  width: 80px;
+  max-width: 80px;
+}
+.brainCard{
+    flex: 0 0 200px;
+    margin: 10px;
+    background-color: #2e2d2d;
+    color: white;
+    width: 28%;
+    min-width: 28%;
+    padding: 1rem;
+    border-radius: 6px;
+    color: #b9b9b9;
+    max-height: 11rem;
+    overflow: hidden;
+    min-height: 10rem;
+}
+.brainCard:hover{
+    box-shadow: 2px 2px 10px black;
+}
 
 
