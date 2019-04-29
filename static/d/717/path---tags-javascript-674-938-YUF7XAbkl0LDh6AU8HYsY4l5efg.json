@@ -1,0 +1,1 @@
+{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/hello-world/"},"frontmatter":{"title":"Hello World","description":"teste hello","date":"May 01, 2015","tags":["javascript","css"]}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":false,"tag":"javascript"}}
