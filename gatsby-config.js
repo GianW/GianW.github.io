@@ -4,6 +4,7 @@ module.exports = {
         author: `Gian Winckler`,
         description: `Gian Winckler personal page.`,
         siteUrl: `https://gianw.github.io/`,
+        avatar: `https://avatars3.githubusercontent.com/u/6453845?s=460&v=4`,
         social: {
             twitter: `gianwinckler`,
         },
@@ -15,6 +16,10 @@ module.exports = {
             {
                 name: 'Brain',
                 link: '/brain'
+            },
+            {
+                name: 'Tags',
+                link: '/tags'
             },
             {
                 name: 'About',

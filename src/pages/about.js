@@ -14,9 +14,9 @@ class About extends React.Component {
                     <p>Im would be happy if it's content could be usefull to someone too.</p>
                     <p>Feel free to contact me at <b style={{color:`white`}}>gianbwinckler@gmail.com</b></p><br/>
                     <hr/>
-                    <p><a href="https://github.com/GianW" target="_blank">Github</a></p>
-                    <p><a href="https://www.linkedin.com/in/giancarlo-winckler-46b6ba82" target="_blank">Linkedin</a></p>
-                    <p><a href="https://twitter.com/GianWinckler" target="_blank">Twitter</a></p>
+                    <p><a href="https://github.com/GianW" target="_blank" rel="noopener noreferrer">Github</a></p>
+                    <p><a href="https://www.linkedin.com/in/giancarlo-winckler-46b6ba82" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+                    <p><a href="https://twitter.com/GianWinckler" target="_blank" rel="noopener noreferrer">Twitter</a></p>
 
                 </div>
 

@@ -21,7 +21,7 @@ class BrainGrid extends React.Component {
                                 {imgs.map(img => {
                                     if (img.node.name === title) {
                                         return(<img src={img.node.publicURL} alt={title} key={img.node.id} />)
-                                    }
+                                    }else{return ""}
                                 })}
                                 </p>
                             </div>

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import './main.css';
 
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 import PostsGrid from "../components/postsGrid"
 
@@ -11,9 +12,12 @@ class PageIndex extends React.Component {
         const { data } = this.props
         // const siteTitle = data.site.siteMetadata.title
         const posts = data.allMarkdownRemark.edges
-
         return (
             <Layout>
+                <SEO
+                  title="Gian Winckler page"
+                  keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+                />
                 <PostsGrid posts={posts} />
             </Layout>
         )
@@ -44,6 +48,7 @@ export const pageQuery = graphql`
                         title
                         description
                         date(formatString: "MMMM DD, YYYY")
+                        tags
                     }
                 }
             }
