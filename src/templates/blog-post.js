@@ -2,13 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import '../pages/main.css';
 import '../pages/prism-tomorrow.css';
+import Bio from "../components/bio"
 
-// import Bio from "../components/bio"
-// import Layout from "../components/layout"
-// import SEO from "../components/seo"
-// import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
 
@@ -19,6 +17,10 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout>
+        <SEO
+          title="Gian Winckler page"
+          keywords={post.frontmatter.tags}
+        />
         <div style={{
             margin: `0 auto`,
             maxWidth: `48rem`,
@@ -38,6 +40,8 @@ class BlogPostTemplate extends React.Component {
           </p>
           <hr/>
           <div dangerouslySetInnerHTML={{ __html: post.html }} className="mainPost" />
+          <hr/>
+          <Bio />
         </div>
       </Layout>
     )
@@ -62,6 +66,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
   }

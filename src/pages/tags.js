@@ -8,6 +8,7 @@ import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const TagsPage = ({
   data: {
@@ -18,6 +19,10 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
+    <SEO
+      title="Gian Winckler page"
+      keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+    />
     <div>
       <h2 style={{marginLeft: `5%`}}>Tags</h2>
       <div className="tagsGrid">

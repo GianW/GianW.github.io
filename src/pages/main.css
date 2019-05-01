@@ -250,10 +250,10 @@ header{
   align-items: stretch;
 }
 .tagPost{
-  border: 1px solid #b9b9b9;
-  color: #b9b9b9;
+  border: 1px solid #55cb9a;
+  color: #55cb9a;
   border-radius: 4px;
-  padding: 0.3rem;
+  padding: 0.4rem;
   margin: 2px;
   text-decoration: none;
   transition: background-color 0.5s ease;
@@ -263,4 +263,13 @@ header{
   box-shadow: 2px 2px 10px black;
   background-color: #aeaeae;
   color: black;
+}
+.authorImg{
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  margin-right: 0.875rem;
+  min-width: 50px;
+  overflow: hidden;
+  margin-top: 1%;
 }

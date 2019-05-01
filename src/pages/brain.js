@@ -4,6 +4,7 @@ import './main.css';
 
 import Layout from "../components/layout"
 import BrainsGrid from "../components/brainGrid"
+import SEO from "../components/seo"
 
 class Brain extends React.Component {
     render() {
@@ -14,6 +15,10 @@ class Brain extends React.Component {
 
         return (
             <Layout>
+                <SEO
+                  title="Gian Winckler page"
+                  keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+                />
                 <BrainsGrid brains={brains} imgs={imgs} />
             </Layout>
 
