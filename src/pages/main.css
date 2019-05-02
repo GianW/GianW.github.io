@@ -11,7 +11,30 @@ header{
     background-color: #2e2d2d;
     /*box-shadow: 2px 4px #7F7E7E;*/
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
+main{
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 1050px) {
+  main{
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main{
+    margin-top: 15%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  main{
+    margin-top: 20%;
+  }
+}
+
 .container-404{
     width: 20%;
     margin-left: 40%;
@@ -269,7 +292,7 @@ header{
   width: 4em;
   height: 4em;
   margin-right: 0.875rem;
-  min-width: 50px;
+  min-width: 60px;
   overflow: hidden;
-  margin-top: 1%;
+  margin-top: 0.5em;
 }

@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
       <Layout>
         <SEO
           title="Gian Winckler page"
-          keywords={post.frontmatter.tags}
+          keywords={post.frontmatter.seo}
         />
         <div style={{
             margin: `0 auto`,
@@ -67,6 +67,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         tags
+        seo
       }
     }
   }
