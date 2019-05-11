@@ -1,19 +1,26 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { DiscussionEmbed } from "disqus-react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../pages/main.css';
 import '../pages/prism-tomorrow.css';
-import Bio from "../components/bio"
+import Bio from "../components/bio";
+
 
 
 class BlogPostTemplate extends React.Component {
 
   render() {
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.markdownRemark;
     // const siteTitle = this.props.data.site.siteMetadata.title
     // const { previous, next } = this.props.pageContext
+    console.log(post);
+    const disqusConfig = {
+      shortname: 'gianwinckler',
+      config: { identifier: post.frontmatter.title },
+    };
 
     return (
       <Layout>
@@ -42,6 +49,7 @@ class BlogPostTemplate extends React.Component {
           <div dangerouslySetInnerHTML={{ __html: post.html }} className="mainPost" />
           <hr/>
           <Bio />
+          <DiscussionEmbed {...disqusConfig} />
         </div>
       </Layout>
     )
