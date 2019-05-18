@@ -12,20 +12,23 @@ const SEO = ({ title, description, keywords, image, pathname, article }) => (
           title,
           author,
           siteUrl,
-          twitter
+          twitter,
+          avatar
         }
       }
     }) => {
 
       const seo = {
         title: title || "Gian Winckler",
-        description: description || "Desenvolvimento developer",
+        description: description || "Software engineer",
         url: `${siteUrl}${pathname || '/'}`,
-        twitterUsername: twitter || "gianwinckler"
+        twitterUsername: twitter || "gianwinckler",
+        image: avatar || ""
       }
 
       return (
           <Helmet>
+            <meta itemprop="name" content={seo.title} />
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             {seo.url && <meta property="og:url" content={seo.url} />}
@@ -65,6 +68,7 @@ const query = graphql`
          title,
          author,
          siteUrl,
+
          social{
           twitter
          }

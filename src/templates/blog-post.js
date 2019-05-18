@@ -15,11 +15,10 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     // const siteTitle = this.props.data.site.siteMetadata.title
-    // const { previous, next } = this.props.pageContext
-    console.log(post);
+
     const disqusConfig = {
       shortname: 'gianwinckler',
-      config: { identifier: post.frontmatter.title },
+      config: { identifier: (post.fields.slug + post.frontmatter.title) },
     };
 
     return (
@@ -68,6 +67,9 @@ export const pageQuery = graphql`
     }
     markdownRemark(
       fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
       id
       excerpt(pruneLength: 160)
       html

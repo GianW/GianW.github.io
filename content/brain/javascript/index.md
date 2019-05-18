@@ -2,6 +2,7 @@
 title: javascript
 type: brain
 tags: []
+seo: ["javascript"]
 ---
 
 # Organizando o Javascript

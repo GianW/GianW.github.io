@@ -19,11 +19,13 @@ class PostsGrid extends React.Component {
 
                     return(
                         <div className="postCard" key={title}>
+
                             <Link style={{ textDecoration: `none` }} to={node.fields.slug} >
                                 <h3 className="cardPostTitle">{title}</h3>
                                 <small className="cardPostDate">{node.frontmatter.date}</small>
                                 <p className="cardPostDesc"> {desc}</p>
                             </Link>
+
                             <div className="tagPostGrid">
                                 {tags.map(tag => (
                                     (

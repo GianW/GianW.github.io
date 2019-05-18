@@ -200,8 +200,9 @@ main{
 
 /*POST*/
 .mainPost, .mainPost *{
-    color: #b9b9b9;
-    letter-spacing: .030rem;
+    color: #d8d8d8;
+    letter-spacing: .050rem;
+    line-height: 1.8;
 }
 
 .mainPost * a{
