@@ -1,1 +1,0 @@
-{"errors":[{"message":"Cannot query field \"image\" on type \"MarkdownRemarkFrontmatter\".","locations":[{"line":26,"column":11}]}],"pageContext":{"isCreatedByStatefulCreatePages":true}}

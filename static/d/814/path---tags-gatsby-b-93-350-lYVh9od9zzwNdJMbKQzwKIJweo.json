@@ -1,0 +1,1 @@
+{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/hello-world/"},"frontmatter":{"title":"Hello World","description":"teste hello","date":"May 10, 2019","tags":["Gatsby"]}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":false,"tag":"Gatsby"}}
