@@ -36,7 +36,7 @@ class Header extends React.Component {
               {menuLinks.map(menu => {
                 return (<Link key={menu.name} to={menu.link}><li> {menu.name}</li></Link>)
               })}
-
+              <p>teste</p>
             </ul>
           </div>
         </div>
@@ -44,14 +44,6 @@ class Header extends React.Component {
     )
   }
 }
-
-// export default Header
-
-// <Link to="/"><li>Home</li></Link>
-// <a href="/"><li>About</li></a>
-// <a href="/"><li>Info</li></a>
-// <a href="/"><li>Contact</li></a>
-
 export default props => (
   <StaticQuery
     query={graphql`

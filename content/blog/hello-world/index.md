@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: "2019-05-10T00:10:03.284Z"
-description: The reasons why i built this page and what i'm looking for with that.
+description: The reasons why i built this page.
 tags: ["Gatsby"]
 seo: ["javascript", "css", "gatsby", "study", "tech"]
 ---

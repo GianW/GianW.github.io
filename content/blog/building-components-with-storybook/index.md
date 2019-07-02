@@ -1,7 +1,7 @@
 ---
 title: Building components with StoryBook
 date: "2019-05-19T22:10:03.284Z"
-description: Building isolated components for (React) with storybook.
+description: Building components with storybook.
 tags: ["React", "Javascript"]
 seo: ["javascript", "react", "reactjs", "StoryBook", "gatsby", "study", "tech"]
 ---
