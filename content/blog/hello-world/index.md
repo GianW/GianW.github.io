@@ -4,6 +4,7 @@ date: "2019-05-10T00:10:03.284Z"
 description: The reasons why i built this page.
 tags: ["Gatsby"]
 seo: ["javascript", "css", "gatsby", "study", "tech"]
+lang: "en"
 ---
 
 This site was made for this purposes:

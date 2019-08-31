@@ -4,6 +4,7 @@ date: "2019-05-19T22:10:03.284Z"
 description: Building components with storybook.
 tags: ["React", "Javascript"]
 seo: ["javascript", "react", "reactjs", "StoryBook", "gatsby", "study", "tech"]
+lang: "en"
 ---
 
 # What is
@@ -22,23 +23,23 @@ The next steps will show the first steps to use storybook, a bit more then "Hell
 Storybook can be used with many libraries like Angular, Ember, Vue, etc.. but now i will use for React.
 
 Inside your project folder root:
-```
+```javascript
 npx -p @storybook/cli sb init
 ```
 Storybook will check your package.json to determine library are you using, to be sure of what kind will be installed, include type:
-```
+```javascript
 npx -p @storybook/cli sb init --type react
 ```
 
 *Manutal installing:*
-```
+```javascript
 npm install @storybook/react --save-dev
 npm install react react-dom --save
 npm install babel-loader @babel/core --save-dev
 ```
 
 Add this to `package.json`
-```
+```javascript
 {
   "scripts": {
     "storybook": "start-storybook"
@@ -47,14 +48,14 @@ Add this to `package.json`
 ```
 
 After all, start Storybook:
-```
+```javascript
 npm run storybook
 ```
 
 # Writing stories
 
 If have you done the automatically installation, you can see the file `storybook/config.js` if not let’s create a config file containing:
-```
+```javascript
 import { configure } from '@storybook/react';
 
 function loadStories() {
@@ -65,7 +66,7 @@ configure(loadStories, module);
 ```
 
 Here is where we will call our stories, each story has a component, again, if you dont have the `stories/index.js` go to create:
-```
+```javascript
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Button } from '@storybook/react/demo';
@@ -86,14 +87,14 @@ It's everything you need to start building and testing your components with Stor
 # Theming
 
 Personaly i prefer the dark theme in my editors and tools, Storybook has a dark theme to, at `storybook/config.js` import:
-```
+```javascript
 import { addParameters } from '@storybook/react';
 import { themes } from '@storybook/theming';
 ```
 
 and after add parameters:
 
-```
+```javascript
 addParameters({
   options: {
     theme: themes.dark,
@@ -108,7 +109,7 @@ Now you should see something like:
 
 You can edit the Storybook style to fit with your project, create a file `myTheme.js` and paste the code below:
 
-```
+```javascript
 import { create } from "@storybook/theming";
 
 export default create({
@@ -149,7 +150,7 @@ export default create({
 ```
 
 Now update `config.js`
-```
+```javascript
 import { configure } from '@storybook/react';
 import { addParameters } from '@storybook/react';
 

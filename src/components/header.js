@@ -2,10 +2,28 @@ import React from "react"
 import {  StaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
-
 class Header extends React.Component {
 
+  barControl = () => {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+
+    if(height === 0){
+      document.getElementsByClassName("progress-container")[0].style.display = "none";
+    }else{
+      document.getElementsByClassName("progress-container")[0].style.display = "block";
+    }
+  }
+
+  componentDidMount() {
+    window.onscroll = () => { this.barControl() };
+    this.barControl();
+  }
+
   render() {
+
     const { data } = this.props
     const menuLinks = data.site.siteMetadata.menuLinks
 
@@ -36,14 +54,18 @@ class Header extends React.Component {
               {menuLinks.map(menu => {
                 return (<Link key={menu.name} to={menu.link}><li> {menu.name}</li></Link>)
               })}
-              <p>teste</p>
             </ul>
           </div>
         </div>
+        <div className="progress-container">
+          <div className="progress-bar" id="myBar"></div>
+        </div>
       </header>
+
     )
   }
 }
+
 export default props => (
   <StaticQuery
     query={graphql`

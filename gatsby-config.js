@@ -26,7 +26,9 @@ module.exports = {
                 link: '/about'
             },
 
-        ]
+        ],
+        ukFlag: `public/icons/ukFlag.png`,
+        brFlag: `public/icons/brFlag.png`
     },
     plugins: [
         // `gatsby-plugin-feed`,
@@ -68,7 +70,6 @@ module.exports = {
                         wrapperStyle: `margin-bottom: 1.0725rem`,
                     },
                 },
-                `gatsby-remark-prismjs`,
                 `gatsby-remark-copy-linked-files`,
                 `gatsby-remark-smartypants`,
                 `gatsby-remark-prismjs`

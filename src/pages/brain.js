@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 
 class Brain extends React.Component {
     render() {
-
         const { data } = this.props
         const brains = data.allMarkdownRemark.edges
         const imgs = data.allFile.edges

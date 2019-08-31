@@ -9,8 +9,7 @@ class BrainGrid extends React.Component {
 
         return(
             <div className="cardGrid">
-
-                 {brains.map(({node}) => {
+                {brains.map(({node}) => {
                     const title = node.frontmatter.title || node.fields.slug;
 
                     return(
@@ -31,6 +30,5 @@ class BrainGrid extends React.Component {
             </div>
         )
     }
-
 }
 export default BrainGrid;

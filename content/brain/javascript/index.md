@@ -5,18 +5,15 @@ tags: []
 seo: ["javascript"]
 ---
 
-# Organizando o Javascript
-Resumo de estudos.
-
 ## Table of Contents
 +  [Escopo de variaveis](#escopo-de-variaveis)
     + [Clousures](#clousures)
-    + [Let](#let---es06)
-    + [Const](#const---es06)
+    + [Let](#let)
+    + [Const](#const)
     + [Destructuring](#destructuring)
     + [Object Literal](#object-literal)
-    + [Spread ...](#spread-)
-    + [Rest ...](#rest-)
+    + [Spread ...](#spread)
+    + [Rest ...](#rest)
 + [Funções](#funções)
     + [Function expression](#function-expression)
     + [Funções anonimas](#funções-anonimas)
@@ -39,7 +36,8 @@ Resumo de estudos.
 
 
 
-<a name="escopo"></a>
+<a name="escopo-de-variaveis"></a>
+
 ## Escopo de variaveis
 Existem dois tipos de escopo para variaveis, Globais ou de Função.
 
@@ -83,6 +81,7 @@ imprime();
 sobrenome = "Winckler";
 ```
 
+<a name="clousures"></a>
 ### Clousures
 
 Uma função que faça referencia a uma variavel que não está no seu escopo e não foi passada como argumento, todas as funções "filhas" da função que possui o escopo da variável, acessam está variável.
@@ -99,8 +98,8 @@ function imprime(){
 }
 console.log("Escopo Global: " + nome); /*undefined*/
 ```
-
-### Let - ES06
+<a name="let"></a>
+### Let
 
 Entre as novas funcionalidades acrescidas pela versão 6 do EcmaScript, está o `let` que cria um escopo por bloco, a execução do hoisting é modificada e ele move a declaração da variavel para o inicio do bloco e não do escopo.
 ```javascript
@@ -117,7 +116,7 @@ imprime();
 ```
 
 O `use strict` foi incluido para usar o `let` da mesma forma que seria nescessario para todas novas funcionalidades do ES06, neste exemplo usamos o `if` mas poderia ser em `for`, `switch`, `case` e assim por diante.
-
+<a name="const"></a>
 ### Const - ES06
 Diferente das declarações anteriores e como o nome sugere, `Const` é a declaração de um valor apenas para leitura dentro do seu escopo.
 ```javascript
@@ -135,7 +134,7 @@ const VALOR = {atual: 'ES05'}
 VALOR.atual = "ES06";
 })()
 ```
-
+<a name="destructuring"></a>
 ### Destructuring
 Extrair dados de arrays e objetos direto para variaveis.
 ```javascript
@@ -158,6 +157,7 @@ console.log(nome, email);
 ```
 Repare que chave ou conchete é o que identifica o tipo de objeto a ser desestruturado.
 
+<a name="object-literal"></a>
 ### Object Literal
 Criar objetos atribuindo variaveis, nome da variaveel vira atributo e permance com o valor:
 ```javascript
@@ -184,6 +184,7 @@ var bejeto = {
 	exibe(){console.log(nome, idade)}
 }
 ```
+<a name="spread"></a>
 ### Spread ...
 
 Separa objetos em multiplos elementos, exemplo:
@@ -208,9 +209,10 @@ function teste(a, ...itens){
 teste(1,2,3,4,5,6,7);
 //1 [2, 3, 4, 5, 6, 7]
 ```
-
+<a name="funcoes"></a>
 ## Funções
 
+<a name="function-expression"></a>
 ### Function expression
 
 Qunado uma função é atribuida a uma variavel
@@ -294,7 +296,7 @@ errValorInvalido("Total"); // qtd 1
 errValorInvalido("Frete"); // qtd 2
 ```
 
-
+<a name="funcoes-anonimas"></a>
 ### Funções anonimas
 
 Na verdade, muitas pessoas chamam de função anonima o que foi explicado anteriormente como function expression, entenda o motivo:
@@ -328,6 +330,7 @@ relogio();
 tic();
 ```
 
+<a name="expressao-nomeada"></a>
 ### Expressão de função nomeada
 
 ```javascript
@@ -343,9 +346,10 @@ math.diminui(2,1);
 math.soma(1,1);
 ```
 
+<a name="arrow-functions"></a>
 ### Arrow Functions
 
-
+<a name="iife"></a>
 ### IIFE - Immediately Invoked Function Expression
 
 São funções atribuidas em expreções `()` e exceturadas logo após sua definição
@@ -403,15 +407,19 @@ e também no navegador
 </script>
 ```
 
+<a name="callback"></a>
 ### Callback
 <hr>
 
+<a name="bind"></a>
 ### Bind
 <hr>
 
+<a name="call"></a>
 ### Call
 <hr>
 
+<a name="apply"></a>
 ### Apply
 <hr>
 
@@ -419,7 +427,8 @@ e também no navegador
 <a name="promises"></a>
 <hr>
 
-## 's
+<a name="arrays"></a>
+## arrays
 
 ### Operações
 ```javascript
@@ -463,6 +472,7 @@ produtos.sort();
 ```
 
 ### Map
+<a name="map"></a>
 Atua/percorre uma lista e executa uma function em cada unidade dessa lista, exemplo:
 ```javascript
 function exibeRegistro(reg){
@@ -479,14 +489,19 @@ var novaLista = produtos.map(function(obj){
 });
 ```
 ### Reduce
+<a name="reduce"></a>
 
 ### Filter
+<a name="filter"></a>
 
 ### Concat
+<a name="concat"></a>
 
 ## String
+<a name="string"></a>
 
 ### Template
+<a name="template"></a>
 ```javascript
 let nome = "Gian";
 let cidade = "Porto Alegre";
