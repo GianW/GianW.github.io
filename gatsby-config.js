@@ -78,6 +78,7 @@ module.exports = {
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-sitemap`,
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
@@ -87,7 +88,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Gians Page`,
+                name: `Gians Winckler`,
                 short_name: `GianW`,
                 start_url: `/`,
                 background_color: `#ffffff`,
@@ -95,6 +96,7 @@ module.exports = {
                 display: `minimal-ui`,
                 icon: `public/icons/icon.png`,
             }
-        }
+        },
+        `gatsby-plugin-offline`,
     ]
 }
