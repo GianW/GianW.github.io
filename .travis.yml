@@ -10,7 +10,6 @@ deploy:
   on:
     branch: source
 before_script:
-  - "npm install -g gatsby"
   - "npm install"
 script:
   - "npm run deploy"
