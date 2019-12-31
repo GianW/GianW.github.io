@@ -39,8 +39,7 @@ class Header extends React.Component {
           <h2 style={{ margin: 0, float: `right` }}>
             <Link
               to="/"
-              style={{color: `white`, textDecoration: `none`}}
-            >
+              style={{color: `white`, textDecoration: `none`}}>
               Gian Winckler
             </Link>
           </h2>

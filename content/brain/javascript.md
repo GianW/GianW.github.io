@@ -171,17 +171,17 @@ console.log(bejeto);
 Abreviação de nome de métodos
 ```javascript
 var bejeto = {
-	nome,
-	idade,
-	exibe : function (){console.log(nome, idade)}
+    nome,
+    idade,
+    exibe : function (){console.log(nome, idade)}
 }
 ```
 pode ser substituido por:
 ```javascript
 var bejeto = {
-	nome,
-	idade,
-	exibe(){console.log(nome, idade)}
+    nome,
+    idade,
+    exibe(){console.log(nome, idade)}
 }
 ```
 <a name="spread"></a>
@@ -254,9 +254,9 @@ O uso da function expression "protege" o escopo das variaveis internas, como foi
 Para exemplificar, sempre que chamamos uma função na forma tradicional `somar()` todo escopo de variaveis internas é reiniciado:
 ```javascript
 function alertaErro(tipoErro){
-	var qtdErro = 0;
-	qtdErro += 1;
-	alert("Erro: " + tipoErro + " Quantidade: " + qtdErro);
+    var qtdErro = 0;
+    qtdErro += 1;
+    alert("Erro: " + tipoErro + " Quantidade: " + qtdErro);
 }
 alertaErro("Valor inválido!"); //Qtd 1
 alertaErro("Valor inválido!"); //Qtd 1
@@ -265,11 +265,11 @@ alertaErro("Valor inválido!"); //Qtd 1
 Usando function expression ficaria dessa forma:
 ```javascript
 function alertaErro(tipoErro){
-	var qtdErro = 0;
-	return function(){
-		qtdErro += 1;
-		alert("Erro: " + tipoErro + " Quantidade: " + qtdErro);
-	}
+    var qtdErro = 0;
+    return function(){
+        qtdErro += 1;
+        alert("Erro: " + tipoErro + " Quantidade: " + qtdErro);
+    }
 }
 let errValorInvalido = alertaErro("Valor inválido!");
 let errPreenchaNome = alertaErro("Você deve preencher o campo nome.");
@@ -284,11 +284,11 @@ Mesmo com esse tipo de atribuição é possível passar valores por paramêtro e
 
 ```javascript
 function alertaErro(tipoErro){
-	var qtdErro = 0;
-	return function(campo){
-		qtdErro += 1;
-		alert("Erro: " + tipoErro + ", Campo: " + campo + " Quantidade: " + qtdErro);
-	}
+    var qtdErro = 0;
+    return function(campo){
+        qtdErro += 1;
+        alert("Erro: " + tipoErro + ", Campo: " + campo + " Quantidade: " + qtdErro);
+    }
 }
 let errValorInvalido = alertaErro("Valor inválido!");
 

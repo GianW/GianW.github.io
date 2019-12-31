@@ -103,7 +103,7 @@ addParameters({
 ```
 
 Now you should see something like:
-![Storybook dark theme](./print_storybook.PNG)
+![Storybook dark theme](../assets/print_storybook.PNG)
 
 # Custom
 
@@ -164,6 +164,6 @@ addParameters({
 
 ```
 
-![Storybook custom theme](./print_storybook2.PNG)
+![Storybook custom theme](../assets/print_storybook2.PNG)
 
 that's all for while.

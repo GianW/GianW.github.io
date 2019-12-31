@@ -28,7 +28,6 @@ exports.getStorage = function(){
     return obj;
 };
 
-
 exports.setStorage = function(data){
     let objStorage = getObjStorage();
     if (objStorage !== null) {
