@@ -2,14 +2,14 @@ language: node_js
 node_js:
   - "stable"
 deploy:
-  provider: pages
-  skip-cleanup: true
+  provider: script
+  skip_cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: public
   keep-history: true
   on:
     branch: source
 before_script:
-  - "npm install"
+  - "npm install -g gatsby"
 script:
-  - "npm run deploy"
+  - "yarn install && yarn run deploy"
