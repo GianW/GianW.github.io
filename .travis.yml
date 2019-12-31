@@ -10,6 +10,7 @@ deploy:
   on:
     branch: source
 before_script:
+  - "rm -rf package-lock.json"
   - "npm install -g gatsby"
 script:
   - "yarn install && yarn run deploy"
