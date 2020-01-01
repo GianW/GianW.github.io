@@ -1,16 +1,19 @@
 language: node_js
 node_js:
   - "stable"
+
+before_script:
+  - "rm package-lock.json node_modules"
+  - "npm install -g gatsby"
+
+script:
+  - "npm install && npm run deploy"
+
 deploy:
-  provider: pages
+  provider: script
   skip_cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: public
   keep-history: true
   on:
-    branch: source
-  before_script:
-    - "rm package-lock.json node_modules"
-    - "npm install -g gatsby"
-  script:
-    - "npm install && npm run deploy"
+    branch: master
