@@ -23,7 +23,8 @@ collections:
           widget: "datetime",
           format: "YYYY-MM-DD hh:mm:ss",
         }
-      #- { label: "image", name: "thumbnail", widget: "image" }
+      - { label: "seo", name: "seo", widget: "string" }
+      - { label: "tags", name: "tags", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "brain" # Used in routes, e.g., /admin/collections/blog
