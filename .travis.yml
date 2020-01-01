@@ -1,14 +1,8 @@
 language: node_js
 node_js:
   - "stable"
-
-before_script:
-  - "rm -rf package-lock.json node_modules"
-  - "yarn add gatsby"
-
-script:
-  - "yarn && yarn run deploy"
-
+after_success:
+  - "npm run deploy"
 deploy:
   provider: script
   skip_cleanup: true
