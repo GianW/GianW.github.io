@@ -3,7 +3,8 @@ node_js:
   - "stable"
 script:
   - "ls"
-
+  - "rm -rf node_modules yarn.lock"
+  - "npm install"
 after_success:
   - "npm run deploy"
 deploy:
