@@ -9,8 +9,8 @@ deploy:
   keep-history: true
   on:
     branch: source
-before_script:
-  - "rm -rf package-lock.json node_modules"
-  - "npm install -g gatsby"
-script:
-  - "npm install && npm run deploy"
+  before_script:
+    - "rm -f -v package-lock.json node_modules"
+    - "npm install -g gatsby"
+  script:
+    - "npm install && npm run deploy"
