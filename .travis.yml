@@ -4,10 +4,10 @@ node_js:
 
 before_script:
   - "rm -rf package-lock.json node_modules"
-  - "npm install -g gatsby"
+  - "yarn gatsby"
 
 script:
-  - "npm install && npm run deploy"
+  - "yarn && yarn run deploy"
 
 deploy:
   provider: script
