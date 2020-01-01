@@ -6,6 +6,7 @@ script:
   - "rm -rf node_modules yarn.lock"
   - "npm install"
 after_success:
+  - "ls"
   - "npm run deploy"
 deploy:
   provider: script
