@@ -1,19 +1,25 @@
 language: node_js
 node_js:
   - "stable"
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: public
+  keep-history: true
+  on:
+    branch: master
+before_script:
+  - "ls"
+  - "npm i -g gatsby"
+  - "npm i"
 script:
   - "ls"
-  - "rm -rf node_modules yarn.lock"
-  - "npm install"
+  - "npm run test"
 after_success:
-  - "rm -rf package-lock.json"
   - "ls"
-  - "gatsby -v"
-  - "gatsby build"
-  - "gh-pages -d public -b master"
-
-deploy:
-  provider: script
-  skip_cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
+  - "npm run deploy"
+  - "ls"
