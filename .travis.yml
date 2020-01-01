@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "stable"
 deploy:
-  provider: script
+  provider: pages
   skip_cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: public
