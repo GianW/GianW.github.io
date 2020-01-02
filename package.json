@@ -12,8 +12,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "preDeploy": "gatsby build --prefix-paths",
-    "deploy": "npm run preDeploy && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r https://$GITHUB_TOKEN@github.com:GianW/GianW.github.io.git"
   },
   "dependencies": {
     "disqus-react": "^1.0.5",
