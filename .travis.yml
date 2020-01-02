@@ -1,25 +1,11 @@
 language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-  - node_modules
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: public
-  keep-history: true
-  on:
-    branch: master
 before_script:
-  - "ls"
-  - "npm i -g gatsby"
-  - "npm i"
-script:
-  - "ls"
-  - "npm run test"
-after_success:
-  - "ls"
-  - "npm run deploy"
-  - "ls"
+  - npm install -g gatsby
+node_js:
+  - "10"
+deploy:
+  provider: script
+  script: ls && yarn install && yarn run deploy
+  skip_cleanup: true
+  on:
+    branch: source
