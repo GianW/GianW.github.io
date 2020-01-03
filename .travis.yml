@@ -5,7 +5,7 @@ node_js:
   - "10"
 deploy:
   provider: script
-  script: rm -rf yarn.lock node_modules .cache && ls && npm install && gatsby build --prefix-paths
+  script: rm -rf yarn.lock node_modules .cache && ls && npm install && npx gatsby build --prefix-paths
   skip_cleanup: true
   on:
     branch: source
