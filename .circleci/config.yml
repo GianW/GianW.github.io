@@ -5,9 +5,6 @@
 version: 2.1
 jobs:
   build:
-    branches:
-      only:
-       - source # list of branches to build
     docker:
       # specify the version you desire here
        - image: circleci/node:10.16.3
