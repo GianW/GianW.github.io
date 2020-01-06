@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-       - image: circleci/node:10.16.3
+       - image: circleci/node:12.14.0
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -18,7 +18,7 @@ jobs:
     steps:
       - checkout
 
-      - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls && node -v && prebuild-install && npm rebuild && npm install
+      - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls && node -v && npm rebuild && npm install
 
       # run tests!
       - run: npm run deploy
