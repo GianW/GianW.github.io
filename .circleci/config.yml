@@ -18,7 +18,7 @@ jobs:
     steps:
       - checkout
 
-      - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls &&  node install/libvips && node install/dll-copy && prebuild-install && npm rebuild && npm install
+      - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls && node -v && prebuild-install && npm rebuild && npm install
 
       # run tests!
       - run: npm run deploy
