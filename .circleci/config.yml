@@ -25,7 +25,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls && npm rebuild && npm install
+      - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls &&  (node install/libvips && node install/dll-copy && prebuild-install) || (node-gyp rebuild && node install/dll-copy) && npm rebuild && npm install
 
       - save_cache:
           paths:
