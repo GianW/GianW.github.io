@@ -2,7 +2,7 @@ backend:
   name: github
   repo: GianW/GianW.github.io
   branch: source
-  site_domain: https://gianw.github.io/
+  site_domain: clever-mcclintock-6cc558.com
 
 publish_mode: editorial_workflow
 media_folder: "content/assets"
