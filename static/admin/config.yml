@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: GianW/GianW.github.io
-  branch: master
+  branch: source
   site_domain: clever-mcclintock-6cc558.netlify.com
 
 publish_mode: editorial_workflow
