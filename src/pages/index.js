@@ -5,8 +5,6 @@ import './main.css';
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import PostsGrid from "../components/postsGrid"
-import config from "../components/config"
-
 
 class PageIndex extends React.Component {
 

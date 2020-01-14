@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "disqus-react": "^1.0.5",
-    "gatsby": "^2.4.17",
+    "gatsby": "^2.10.17",
     "gatsby-cli": "^2.7.44",
     "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-manifest": "^2.0.26",
