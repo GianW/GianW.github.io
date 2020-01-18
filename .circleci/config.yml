@@ -18,8 +18,9 @@ jobs:
     steps:
       - checkout
 
-      - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls && node -v && npm rebuild && npm install
+      - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls && node -v && npm install
 
       # run tests!
-      - run: npm run deploy
+      #- run: npm run deploy
+      - run: gatsby build --prefix-paths
 
