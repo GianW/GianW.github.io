@@ -21,6 +21,6 @@ jobs:
       - run: rm -rf yarn.lock node_modules .cache package-lock.json && ls && node -v && npm install && npm i gatsby-cli && gatsby -v
 
       # run tests!
-      #- run: npm run deploy
-      - run: gatsby build --prefix-paths
+      - run: npm run deploy
+      #- run: gatsby build --prefix-paths
 
