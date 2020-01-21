@@ -335,13 +335,14 @@ tic();
 
 ```javascript
 var math = {
-  'diminui': function diminui(a,b) {
-   console.log(a - b);
-  },
-'soma': function soma(a,b){
-  console.log(a + b);
-  }
+    'diminui': function diminui(a,b) {
+        console.log(a - b);
+    },
+    'soma': function soma(a,b){
+        console.log(a + b);
+    }
 };
+
 math.diminui(2,1);
 math.soma(1,1);
 ```
@@ -364,15 +365,15 @@ Existem diversos usos para este tipo de função, exemplo:
 
 ```javascript
 var produtos = (function(){
-  var lista = [];
-  return{
-   add: function(a){
-     lista.push(a)
-   },
-   show: function(){
-     console.log(lista);
-   }
-  }
+    var lista = [];
+    return{
+        add: function(a){
+            lista.push(a)
+        },
+        show: function(){
+            console.log(lista);
+        }
+    }
 }());
 
 produtos.add("camisa");
@@ -388,7 +389,6 @@ Também é possivel usar uma IIFE para identificar o contexto de uso de uma fun�
   function hello(name) {
     console.log("hello", name);
   }
-
   context.hello = hello;
 }((this.module && this.module.exports) ? module.exports : this));
 ```
@@ -476,7 +476,7 @@ produtos.sort();
 Atua/percorre uma lista e executa uma function em cada unidade dessa lista, exemplo:
 ```javascript
 function exibeRegistro(reg){
- console.log(reg);
+    console.log(reg);
 }
 
 produtos.map(function(obj){
