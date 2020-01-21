@@ -1,7 +1,7 @@
 ---
 title: javascript
 type: brain
-tags: []
+tags: ["javascript"]
 seo: ["javascript"]
 ---
 
@@ -16,9 +16,9 @@ seo: ["javascript"]
     + [Rest ...](#rest)
 + [Funções](#funções)
     + [Function expression](#function-expression)
-    + [Funções anonimas](#funções-anonimas)
-    + [Expressão de função nomeada](#expressão-de-função-nomeada)
-    + [IIFE - Immediately Invoked Function Expression](#iife---immediately-invoked-function-expression)
+    + [Funções anonimas](#funcoes-anonimas)
+    + [Expressão de função nomeada](#expressao-de-funcao-nomeada)
+    + [IIFE - Immediately Invoked Function Expression](#iife)
     + [Callback](#callback)
     + [Bind](#bind)
     + [Call](#call)
