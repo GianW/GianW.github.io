@@ -1,8 +1,8 @@
 ---
 title: javascript
 type: brain
-tags: []
-seo: ["javascript"]
+seo:
+  - javascript
 ---
 
 ## Table of Contents
@@ -16,9 +16,9 @@ seo: ["javascript"]
     + [Rest ...](#rest)
 + [Funções](#funções)
     + [Function expression](#function-expression)
-    + [Funções anonimas](#funções-anonimas)
-    + [Expressão de função nomeada](#expressão-de-função-nomeada)
-    + [IIFE - Immediately Invoked Function Expression](#iife---immediately-invoked-function-expression)
+    + [Funções anonimas](#funcoesanonimas)
+    + [Expressão de função nomeada](#expressao-de-funcao-nomeada)
+    + [IIFE - Immediately Invoked Function Expression](#iife)
     + [Callback](#callback)
     + [Bind](#bind)
     + [Call](#call)
@@ -296,7 +296,7 @@ errValorInvalido("Total"); // qtd 1
 errValorInvalido("Frete"); // qtd 2
 ```
 
-<a name="funcoes-anonimas"></a>
+<a name="funcoesanonimas"></a>
 ### Funções anonimas
 
 Na verdade, muitas pessoas chamam de função anonima o que foi explicado anteriormente como function expression, entenda o motivo:
@@ -330,7 +330,7 @@ relogio();
 tic();
 ```
 
-<a name="expressao-nomeada"></a>
+<a name="expressao-de-funcao-nomeada"></a>
 ### Expressão de função nomeada
 
 ```javascript
