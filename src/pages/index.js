@@ -26,6 +26,8 @@ class PageIndex extends React.Component {
 	}
 
 	render() {
+		const { data } = this.props
+
 		return (
 			<Layout onChangeLang={this.changeLang} lang={this.state.lang}>
 				<SEO
