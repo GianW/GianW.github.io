@@ -27,8 +27,8 @@ module.exports = {
             },
 
         ],
-        ukFlag: `public/icons/ukFlag.png`,
-        brFlag: `public/icons/brFlag.png`
+        ukFlag: `static/icons/ukFlag.png`,
+        brFlag: `static/icons/brFlag.png`
     },
     plugins: [
         // `gatsby-plugin-feed`,
@@ -94,7 +94,7 @@ module.exports = {
                 background_color: `#ffffff`,
                 theme_color: `#000`,
                 display: `minimal-ui`,
-                icon: `public/icons/icon.png`,
+                icon: `static/icons/icon.png`,
             }
         },
         `gatsby-plugin-offline`,
