@@ -14,6 +14,10 @@ module.exports = {
                 link: '/'
             },
             {
+                name: 'Projects',
+                link: '/projecs'
+            },
+            {
                 name: 'Brain',
                 link: '/brain'
             },

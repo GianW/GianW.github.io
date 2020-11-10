@@ -14,7 +14,7 @@ seo: ["javascript"]
     + [Object Literal](#object-literal)
     + [Spread ...](#spread)
     + [Rest ...](#rest)
-+ [Funções](#funções)
++ [Funções](#funcoes)
     + [Function expression](#function-expression)
     + [Funções anonimas](#funcoes-anonimas)
     + [Expressão de função nomeada](#expressao-de-funcao-nomeada)
@@ -37,6 +37,7 @@ seo: ["javascript"]
 
 
 <a name="escopo-de-variaveis"></a>
+<hr>
 
 ## Escopo de variaveis
 Existem dois tipos de escopo para variaveis, Globais ou de Função.
@@ -80,6 +81,7 @@ function imprime(){
 imprime();
 sobrenome = "Winckler";
 ```
+<p class="contentDottedDivider"></p>
 
 <a name="clousures"></a>
 ### Clousures
@@ -98,7 +100,10 @@ function imprime(){
 }
 console.log("Escopo Global: " + nome); /*undefined*/
 ```
-<a name="let"></a>
+<p class="contentDottedDivider"></p>
+
+<a style="text-align: center;" name="let"></a>
+
 ### Let
 
 Entre as novas funcionalidades acrescidas pela versão 6 do EcmaScript, está o `let` que cria um escopo por bloco, a execução do hoisting é modificada e ele move a declaração da variavel para o inicio do bloco e não do escopo.
@@ -116,6 +121,9 @@ imprime();
 ```
 
 O `use strict` foi incluido para usar o `let` da mesma forma que seria nescessario para todas novas funcionalidades do ES06, neste exemplo usamos o `if` mas poderia ser em `for`, `switch`, `case` e assim por diante.
+
+<p class="contentDottedDivider"></p>
+
 <a name="const"></a>
 ### Const - ES06
 Diferente das declarações anteriores e como o nome sugere, `Const` é a declaração de um valor apenas para leitura dentro do seu escopo.
@@ -134,6 +142,8 @@ const VALOR = {atual: 'ES05'}
 VALOR.atual = "ES06";
 })()
 ```
+<p class="contentDottedDivider"></p>
+
 <a name="destructuring"></a>
 ### Destructuring
 Extrair dados de arrays e objetos direto para variaveis.
@@ -156,6 +166,8 @@ let {nome, email} = pessoa;
 console.log(nome, email);
 ```
 Repare que chave ou conchete é o que identifica o tipo de objeto a ser desestruturado.
+
+<p class="contentDottedDivider"></p>
 
 <a name="object-literal"></a>
 ### Object Literal
@@ -184,6 +196,8 @@ var bejeto = {
     exibe(){console.log(nome, idade)}
 }
 ```
+<p class="contentDottedDivider"></p>
+
 <a name="spread"></a>
 ### Spread ...
 
@@ -199,6 +213,8 @@ exibe(...lista);
 
 Na primeira chamada ele enviou o array inteiro, na segunda "quebrou" as posições do array em valores separados
 
+<p class="contentDottedDivider"></p>
+
 ### Rest ...
 
 Reune varios elementos em um array, exemplo:
@@ -210,6 +226,8 @@ teste(1,2,3,4,5,6,7);
 //1 [2, 3, 4, 5, 6, 7]
 ```
 <a name="funcoes"></a>
+<hr>
+
 ## Funções
 
 <a name="function-expression"></a>
@@ -329,6 +347,7 @@ var relogio =  function tic(){
 relogio();
 tic();
 ```
+<p class="contentDottedDivider"></p>
 
 <a name="expressao-nomeada"></a>
 ### Expressão de função nomeada
@@ -346,9 +365,11 @@ var math = {
 math.diminui(2,1);
 math.soma(1,1);
 ```
+<p class="contentDottedDivider"></p>
 
 <a name="arrow-functions"></a>
 ### Arrow Functions
+<p class="contentDottedDivider"></p>
 
 <a name="iife"></a>
 ### IIFE - Immediately Invoked Function Expression
@@ -407,28 +428,35 @@ e também no navegador
 </script>
 ```
 
+<p class="contentDottedDivider"></p>
+
 <a name="callback"></a>
 ### Callback
-<hr>
+
+<p class="contentDottedDivider"></p>
 
 <a name="bind"></a>
 ### Bind
-<hr>
+
+<p class="contentDottedDivider"></p>
 
 <a name="call"></a>
 ### Call
-<hr>
+
+<p class="contentDottedDivider"></p>
 
 <a name="apply"></a>
 ### Apply
-<hr>
+
+<p class="contentDottedDivider"></p>
 
 ### Promises
 <a name="promises"></a>
+
 <hr>
 
 <a name="arrays"></a>
-## arrays
+## Arays
 
 ### Operações
 ```javascript
@@ -470,6 +498,7 @@ var produtosDois = produtos.slice();
 produtos.sort();
 
 ```
+<p class="contentDottedDivider"></p>
 
 ### Map
 <a name="map"></a>
@@ -488,14 +517,50 @@ var novaLista = produtos.map(function(obj){
     return obj + "_1";
 });
 ```
+<p class="contentDottedDivider"></p>
+
 ### Reduce
 <a name="reduce"></a>
+
+Reduz um array para um valor único, executa uma função para cada valor do array e adiciona o retorno da função em um acumulador.
+
+```javascript
+let teste = [1,2,3].reduce(function(acum, valor) {    
+    return acum + valor;
+});
+
+console.log(teste); //6
+```
+
+parâmetros
+```
+array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+```
+
+<p class="contentDottedDivider"></p>
 
 ### Filter
 <a name="filter"></a>
 
+Atua/percorre um array e retorna os valores que passarem pelo filtro/função atribuida
+```javascript
+let teste = [1,2,11,20,5].filter(function(valor){
+    return valor > 10;
+});
+
+console.log(teste); //[11,20]
+```
+parâmetros
+```
+array.filter(function(currentValue, index, arr), thisValue)
+```
+
+<p class="contentDottedDivider"></p>
+
 ### Concat
 <a name="concat"></a>
+
+<hr>
 
 ## String
 <a name="string"></a>

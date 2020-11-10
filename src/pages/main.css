@@ -349,3 +349,9 @@ main{
   background: #6d6d6d;
   width: 0%;
 }
+
+.contentDottedDivider{
+  border-bottom:2px dotted;
+  width:100%;
+  color:#929292;
+}

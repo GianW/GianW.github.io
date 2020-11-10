@@ -29,7 +29,7 @@ class BlogPostTemplate extends React.Component {
         />
         <div style={{
             margin: `0 auto`,
-            maxWidth: `48rem`,
+            maxWidth: `52rem`,
             padding: `1.0rem 1.0875rem`,
             // color: `#b9b9b9`
           }}>
