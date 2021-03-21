@@ -1,17 +1,21 @@
 ---
 title: Hello World
-date: "2019-05-10T00:10:03.284Z"
 description: The reasons why i built this page.
-tags: ["Gatsby"]
-seo: ["javascript", "css", "gatsby", "study", "tech"]
-lang: "en"
+date: '2019-05-10T00:10:03.284Z'
+seo:
+  - javascript
+  - css
+  - gatsby
+  - study
+  - tech
+tags:
+  - Gatsby
 ---
+This site was made with this purposes:
 
-This site was made for this purposes:
-
-- **To document my projects and studies;**
-- **Quick reference to myself;**
-- **Improve communication skills.**
+* **To document my projects and studies;**
+* **Quick reference to myself;**
+* **Improve communication skills.**
 
 **To document my projects and studies:** To document the process of creation and the design decisions around the projects i've worked with, and to take as a notebook for my studies.
 
